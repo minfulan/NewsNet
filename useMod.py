@@ -14,8 +14,8 @@ if '__main__' in sys.modules:
 
 # 1. 加载保存的组件
 try:
-    loaded_vectorizer = joblib.load('my_news_vectorizer.joblib')
-    loaded_model = joblib.load('my_news_model.joblib')
+    loaded_vectorizer = joblib.load('news_vectorizer.joblib')
+    loaded_model = joblib.load('news_model.joblib')
 except AttributeError as e:
     print(f"加载失败: {e}")
     print("提示：请确保 chinese_tokenizer 的定义与训练时完全一致。")

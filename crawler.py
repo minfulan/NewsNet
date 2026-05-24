@@ -31,6 +31,7 @@ for url in news_url:
         for tag in soup.find_all('a'):
             href = tag.get('href')
             text = tag.text
+            text = text.strip()
             if len(text) > 10:
                 tlist.append(text)
                 hlist.append(href)

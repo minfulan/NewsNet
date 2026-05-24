@@ -84,5 +84,5 @@ if __name__ == '__main__':
     joblib.dump(model, 'news_model.joblib')
 
     print("模型保存成功！生成两个文件：")
-    print("1. my_news_vectorizer.joblib")
-    print("2. my_news_model.joblib")
+    print("1. news_vectorizer.joblib")
+    print("2. news_model.joblib")
